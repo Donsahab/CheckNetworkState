@@ -15,7 +15,7 @@ public class UpdateReciever extends android.content.BroadcastReceiver {
         if (netInfo != null && netInfo.isConnectedOrConnecting()) {
             Toast.makeText(context, "Network Available", Toast.LENGTH_SHORT).show();
         }else {
-            Toast.makeText(context, "Network Not Available", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "Network Error", Toast.LENGTH_SHORT).show();
         }
     }
 }

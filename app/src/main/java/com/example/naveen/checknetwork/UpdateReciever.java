@@ -13,7 +13,7 @@ public class UpdateReciever extends android.content.BroadcastReceiver {
                 (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo netInfo = cm.getActiveNetworkInfo();
         if (netInfo != null && netInfo.isConnectedOrConnecting()) {
-            Toast.makeText(context, "Network Available", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "Network Available Now", Toast.LENGTH_SHORT).show();
         }else {
             Toast.makeText(context, "Network Not Available", Toast.LENGTH_SHORT).show();
         }
